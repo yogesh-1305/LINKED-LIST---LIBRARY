@@ -4,6 +4,7 @@ package com.company;
 public class MyLinkedList<E> {
     Node<E> head;
 
+
     // ADD FUNCTION TO ADD ELEMENTS TO LINKED LIST
     void add(E data){
         // CREATING OBJECT OF NODE CLASS (CREATING NEW NODE)
@@ -36,6 +37,8 @@ public class MyLinkedList<E> {
         temp.next = toAdd;
     }
 
+
+
     // FUNCTION TO CHECK IF THE LIST IS EMPTY OR NOT
     boolean isEmpty(){
         return head == null;
@@ -50,6 +53,8 @@ public class MyLinkedList<E> {
         }
         System.out.println();
     }
+
+
 
     // FUNCTION TO FIND INDEX OF THE ELEMENT STORED IN LINKED LIST
     E indexOf(E element){
@@ -78,6 +83,9 @@ public class MyLinkedList<E> {
         return element;
     }
 
+
+
+    // METHOD TO ADD AN ELEMENT AT A SPECIFIC INDEX
     void set(E data, int index){
         // CREATING TEMPORARY NODE AND SETTING IT TO HEAD NODE
         Node<E> temp = head;
@@ -106,6 +114,8 @@ public class MyLinkedList<E> {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+
+
 
     // NODE CLASS
     static class Node<E>{
